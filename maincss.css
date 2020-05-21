@@ -1,0 +1,64 @@
+#topMenu { 
+    height: 30px;
+    width: 850px;
+}
+#topMenu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#topMenu ul li {
+    color: white;
+    background-color: black;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.menuLink, .submenuLink {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Dotum;
+}
+.menuLink {
+    color: white;
+}
+.topMenuLi:hover .menuLink {
+    color: rgb(238, 184, 222);
+    background-color: skyblue;
+}
+.submenuLink {
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    margin-top: -1px;
+}
+.longLink {
+    width: 190px;
+}
+.submenu {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    transition: height .2s;
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    -o-transtion: height .2s;
+}
+.topMenuLi:hover .submenu{
+    height: 93px;
+}
+.submenuLink:hover {
+    color: rgb(238, 184, 222);
+    background-color: skyblue;
+}
+body {
+    background-image: url('sakura.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
